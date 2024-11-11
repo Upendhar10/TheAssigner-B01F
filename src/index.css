@@ -1,3 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.primary-color {
+  background: #641566;
+}
+
+.btn-BgColor {
+  background: #583781;
+}
+
+.Navlinks-Shadow {
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.cormaorant-regular {
+  font-family: "Cormorant", serif;
+  font-weight: 400;
+}
+
+.cormaorant-bold {
+  font-family: "Cormorant", serif;
+  font-weight: 700;
+}
