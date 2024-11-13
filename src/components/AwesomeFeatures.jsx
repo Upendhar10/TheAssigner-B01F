@@ -2,7 +2,7 @@ import { assets } from "../assets/assets";
 
 const Features = ({ src, title, description }) => {
   return (
-    <div className="cormaorant-regular Navlinks-Shadow flex min-h-48 w-[250px] flex-col items-center rounded-lg border border-black p-4">
+    <div className="cormaorant-regular Navlinks-Shadow flex min-h-48 w-[200px] flex-col items-center rounded-lg border border-black p-4">
       <img src={src} alt="plagiarism" />
       <p className="m-2 font-semibold">{title}</p>
       <p className="text-center">{description}</p>
@@ -17,7 +17,7 @@ function AwesomeFeatures() {
       <p className="cormaorant-regular font-semibold">
         Get ready to unlock the next level of features
       </p>
-      <div className="mt-3 flex items-center justify-center gap-5">
+      <div className="mt-3 flex flex-wrap items-center justify-center gap-5">
         <Features
           src={assets.Plagiarism}
           title={"Plagiarism Checker"}

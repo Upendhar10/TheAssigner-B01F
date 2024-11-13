@@ -1,6 +1,6 @@
 function NavLinks() {
   return (
-    <div className="h-12 flex gap-14 py-3 px-9 bg-[#F5F5F5] w-[759px] Navlinks-Shadow ">
+    <div className="Navlinks-Shadow hidden h-12 w-[759px] gap-14 bg-[#F5F5F5] px-9 py-3 lg:flex">
       <a href="#">Home</a>
       <a href="#">About Us</a>
       <a href="#">Blog</a>

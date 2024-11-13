@@ -25,6 +25,10 @@ import Service11 from "./Service11.svg";
 import Service12 from "./Service12.png";
 import Service13 from "./Service13.svg";
 import arrow from "./arrow.png";
+import EnrollNow1 from "./EnrollNow1.png";
+import EnrollNow2 from "./EnrollNow2.png";
+import FooterBg from "./FooterBg.png";
+import EnrollNowBg from "./EnrollNowBg.jpg";
 
 export const assets = {
   SocialsCont,
@@ -54,4 +58,8 @@ export const assets = {
   Service12,
   Service13,
   arrow,
+  EnrollNow1,
+  EnrollNow2,
+  FooterBg,
+  EnrollNowBg,
 };

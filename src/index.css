@@ -29,3 +29,22 @@
 .Advantages-bgColor {
   background: #ee481447;
 }
+
+.linear-gradient {
+  background: linear-gradient(
+    257.29deg,
+    rgba(153, 124, 152, 0.6) 6.5%,
+    #ffffff 18.5%,
+    rgba(159, 13, 118, 0.27) 41%,
+    #ffffff 77.5%,
+    rgba(153, 124, 152, 0.4) 90.5%
+  );
+}
+
+.EnrollNowBG {
+  padding: 6rem;
+  background-image: url("./assets/EnrollNowBg.jpg");
+  /* height: auto; */
+  background-size: cover;
+  background-position: center;
+}

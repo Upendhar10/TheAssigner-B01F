@@ -2,13 +2,13 @@ import { assets } from "../assets/assets";
 
 function HeroText() {
   return (
-    <div className="absolute left-1/4 top-56 -translate-x-1/2 -translate-y-1/2 transform">
-      <h1 className="cormaorant-bold flex flex-col text-5xl font-extrabold leading-normal tracking-wide">
+    <div className="absolute left-5 top-2 transform md:left-1/4 md:top-56 md:-translate-x-1/2 md:-translate-y-1/2">
+      <h1 className="cormaorant-bold flex flex-col font-extrabold leading-relaxed tracking-wide md:text-5xl">
         <span>Navigate your</span>
         <span className="text-[#583781]">Academic Journey</span>
         <span>with Confidence</span>
       </h1>
-      <p className="cormaorant-regular w-96 text-lg text-white">
+      <p className="cormaorant-regular mt-3 w-[275px] text-[14px] text-black md:w-96 md:text-lg">
         Providing high-quality and comprehensive assistance with assignments and
         thesis writing for students at all academic levels.
       </p>
@@ -35,12 +35,12 @@ function HeroStats() {
       <img
         src={assets.HeroX}
         alt="Hero"
-        className="absolute bottom-0 right-1"
+        className="absolute -bottom-6 right-1 hidden md:block"
       />
       <img
         src={assets.HeroArrow}
         alt="Hero"
-        className="absolute left-2 top-1"
+        className="absolute -top-5 left-2 hidden md:block"
       />
       <div className="h-30 mt-5 flex w-full flex-col gap-4">
         <div className="text-center">

@@ -1,8 +1,11 @@
+import { assets } from "../assets/assets";
 const AdvantagesCard = ({ title, description }) => {
   return (
-    <div className="cormaorant-regular Navlinks-Shadow Advantages-bgColor flex min-h-48 w-[250px] flex-col items-center justify-center rounded-lg border border-black p-4">
+    <div className="cormaorant-regular Navlinks-Shadow Advantages-bgColor flex min-h-52 max-w-[200px] flex-col items-center justify-center rounded-lg border border-black p-4">
       <h2 className="cormaorant-bold m-2 text-2xl">{title}</h2>
-      <p className="cormaorant-regular font-semibold">{description}</p>
+      <p className="cormaorant-regular text-center font-semibold">
+        {description}
+      </p>
     </div>
   );
 };
@@ -13,11 +16,21 @@ function Advantages() {
       <h2 className="cormaorant-bold text-center text-3xl">
         Our Assistance&apos;s advantages
       </h2>
-      <p className="cormaorant-regular text-center font-semibold">
+      <p className="cormaorant-regular px-5 text-center font-semibold">
         The Assigner wants to build a strong foundation that will enable
         students to soar to achievement.
       </p>
-      <div className="mt-3 flex items-center justify-center gap-5">
+      <div className="relative mt-3 flex flex-wrap items-center justify-center gap-5">
+        <img
+          src={assets.HeroX}
+          alt="Hero"
+          className="absolute -bottom-10 left-32 hidden rotate-180 md:block"
+        />
+        <img
+          src={assets.HeroArrow}
+          alt="Hero"
+          className="absolute right-14 top-1 hidden -rotate-90 md:block"
+        />
         <AdvantagesCard
           title={"No Plagiarism"}
           description="100% original answers that lessen the possibility of receiving a bad grade."

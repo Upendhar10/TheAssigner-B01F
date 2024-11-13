@@ -2,7 +2,12 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        footerBg: "url('./assets/FooterBg.png')",
+        EnrollNowBg: "url('./assets/EnrollNowBg.jpg')",
+      },
+    },
   },
   plugins: [],
 };

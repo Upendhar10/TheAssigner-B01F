@@ -1,7 +1,7 @@
 import { assets } from "../assets/assets";
 function ServiceCard({ src1, alt1, title, Number }) {
   return (
-    <div className="cormaorant-regular Navlinks-Shadow flex w-fit flex-col items-center rounded-lg border border-black pb-2">
+    <div className="cormaorant-regular Navlinks-Shadow flex min-h-48 w-[200px] flex-col items-center rounded-lg border border-black pb-2">
       <img src={src1} alt={alt1} className="rounded-t-md" />
       <p className="cormaorant-regular font-semibold">{title}</p>
       <div className="flex items-center gap-1">
@@ -16,14 +16,16 @@ function ServiceCard({ src1, alt1, title, Number }) {
   );
 }
 
+// cormaorant-regular Navlinks-Shadow flex min-w-[125px] max-w-[250px] flex-col items-center rounded-lg border border-black bg-white pb-2
+
 function Services() {
   return (
-    <div className="my-10 w-full">
+    <div className="my-10 bg-[#C414681A] p-3">
       <h2 className="cormaorant-bold text-center text-3xl">Our Services</h2>
       <p className="cormaorant-regular my-2 text-center font-semibold">
         we offer some fantastic services
       </p>
-      <div className="flex flex-wrap items-center justify-center gap-10">
+      <div className="flex flex-wrap items-center justify-center gap-5">
         <ServiceCard
           src1={assets.Service1}
           alt1="Assignment"

@@ -3,7 +3,7 @@ import { assets } from "../assets/assets";
 const FooterLinks = ({ title, links }) => {
   return (
     <div>
-      <h2 className="cormaorant-bold text-2xl italic">{title}</h2>
+      <h2 className="cormaorant-bold min-w-[200px] text-2xl italic">{title}</h2>
       <ul className="cormaorant-regular my-2 italic">
         {links.map((link, index) => (
           <li key={index} className="my-1">
@@ -67,7 +67,7 @@ const NewsLetter = () => {
 
 function Footer() {
   return (
-    <div className="my-10 flex justify-around">
+    <div className="bg-footerBg flex flex-wrap items-start justify-around gap-5 px-1 py-10">
       <FooterLinks title={"QuickLinks"} links={quickLinks} />
       <FooterLinks title={"Features"} links={Features} />
       <FooterLinks title={"Our Offerings"} links={OurOfferings} />

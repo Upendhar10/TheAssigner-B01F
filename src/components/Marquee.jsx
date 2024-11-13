@@ -1,7 +1,7 @@
 import { assets } from "../assets/assets";
 function Marquee() {
   return (
-    <div className="h-10 primary-color w-full flex justify-end">
+    <div className="primary-color hidden h-10 w-full justify-end md:flex">
       <img src={assets.SocialsCont} alt="SocialsCont" />
     </div>
   );
