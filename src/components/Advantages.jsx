@@ -2,7 +2,7 @@ import { assets } from "../assets/assets";
 const AdvantagesCard = ({ title, description }) => {
   return (
     <div className="cormaorant-regular Navlinks-Shadow Advantages-bgColor flex min-h-52 max-w-[200px] flex-col items-center justify-center rounded-lg border border-black p-4">
-      <h2 className="cormaorant-bold m-2 text-2xl">{title}</h2>
+      <h2 className="cormaorant-bold m-3 text-2xl">{title}</h2>
       <p className="cormaorant-regular text-center font-semibold">
         {description}
       </p>
