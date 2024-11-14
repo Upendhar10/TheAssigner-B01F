@@ -1,7 +1,20 @@
 import { assets } from "../assets/assets";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 function ServiceCard({ src1, alt1, title, Number }) {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      delay: 100,
+    });
+  }, []);
   return (
-    <div className="cormaorant-regular Navlinks-Shadow flex min-h-48 w-[200px] flex-col items-center rounded-lg border border-black pb-2">
+    <div
+      className="cormaorant-regular Navlinks-Shadow flex min-h-48 w-[200px] flex-col items-center rounded-lg border border-black pb-2 hover:scale-150 hover:transform hover:shadow-2xl"
+      data-aos="fade-down"
+    >
       <img src={src1} alt={alt1} className="rounded-t-md" />
       <p className="cormaorant-regular font-semibold">{title}</p>
       <div className="flex items-center gap-1">

@@ -6,7 +6,10 @@ const FooterLinks = ({ title, links }) => {
       <h2 className="cormaorant-bold min-w-[200px] text-2xl italic">{title}</h2>
       <ul className="cormaorant-regular my-2 italic">
         {links.map((link, index) => (
-          <li key={index} className="my-1">
+          <li
+            key={index}
+            className="my-1 hover:translate-x-2 hover:text-[#A259FF]"
+          >
             <a href={link.url}>{link.text}</a>
           </li>
         ))}
@@ -67,7 +70,7 @@ const NewsLetter = () => {
 
 function Footer() {
   return (
-    <div className="bg-footerBg flex flex-wrap items-start justify-around gap-5 px-1 py-10">
+    <div className="flex flex-wrap items-start justify-around gap-5 bg-footerBg px-1 py-10">
       <FooterLinks title={"QuickLinks"} links={quickLinks} />
       <FooterLinks title={"Features"} links={Features} />
       <FooterLinks title={"Our Offerings"} links={OurOfferings} />

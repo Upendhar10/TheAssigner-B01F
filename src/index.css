@@ -42,9 +42,21 @@
 }
 
 .EnrollNowBG {
-  padding: 6rem;
   background-image: url("./assets/EnrollNowBg.jpg");
-  /* height: auto; */
   background-size: cover;
   background-position: center;
+}
+
+/* Default styles for small screens */
+.EnrollNowBG {
+  padding: 2rem;
+  height: 240px;
+}
+
+/* Styles for medium to large screens */
+@media (min-width: 768px) {
+  .EnrollNowBG {
+    padding: 6rem;
+    height: auto; /* or any desired height */
+  }
 }

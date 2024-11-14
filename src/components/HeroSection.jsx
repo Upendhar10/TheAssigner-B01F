@@ -1,14 +1,23 @@
 import { assets } from "../assets/assets";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function HeroText() {
   return (
-    <div className="absolute left-5 top-2 transform md:left-1/4 md:top-56 md:-translate-x-1/2 md:-translate-y-1/2">
-      <h1 className="cormaorant-bold flex flex-col font-extrabold leading-relaxed tracking-wide md:text-5xl">
-        <span>Navigate your</span>
-        <span className="text-[#583781]">Academic Journey</span>
-        <span>with Confidence</span>
+    <div className="absolute left-5 top-10 transform md:left-1/4 md:top-56 md:-translate-x-1/2 md:-translate-y-1/2">
+      <h1
+        className="cormaorant-bold flex flex-col text-2xl font-extrabold leading-relaxed tracking-wide md:text-5xl"
+        data-aos="fade-right"
+      >
+        <span className="text-[#9F0D76]">Navigate your</span>
+        <span className="text-[#583781] md:my-5">Academic Journey</span>
+        <span className="text-[#A259FF]">with Confidence</span>
       </h1>
-      <p className="cormaorant-regular mt-3 w-[275px] text-[14px] text-black md:w-96 md:text-lg">
+      <p
+        className="cormaorant-regular mt-3 w-[275px] text-[14px] text-black md:w-96 md:text-lg"
+        data-aos="fade-right"
+      >
         Providing high-quality and comprehensive assistance with assignments and
         thesis writing for students at all academic levels.
       </p>
@@ -31,7 +40,7 @@ function HeroStatsIcons({ Number, src, alt, spanText }) {
 
 function HeroStats() {
   return (
-    <div className="relative my-10">
+    <div className="relative my-10" data-aos="fade-down">
       <img
         src={assets.HeroX}
         alt="Hero"
@@ -78,9 +87,17 @@ function HeroStats() {
 }
 
 function HeroSection() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      offset: 80,
+      easing: "ease-in-out-quart",
+      delay: 100,
+    });
+  }, []);
   return (
-    <div className="relative">
-      <img src={assets.Hero} alt="Hero" />
+    <div className="relative" data-aos="fade-down">
+      <img src={assets.Hero} alt="Hero" className="h-[250px] md:h-full" />
       <HeroText />
       <HeroStats />
     </div>

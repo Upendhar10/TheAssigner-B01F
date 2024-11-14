@@ -7,6 +7,9 @@ import Services from "./components/Services";
 import Advantages from "./components/Advantages";
 import Faqs from "./components/Faqs";
 import Footer from "./components/Footer";
+import MenuCont from "./components/MenuCont";
+import Welcome from "./components/Welcome";
+
 function App() {
   return (
     <div>

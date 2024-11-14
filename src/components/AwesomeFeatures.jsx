@@ -1,4 +1,7 @@
 import { assets } from "../assets/assets";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Features = ({ src, title, description }) => {
   return (
@@ -11,8 +14,16 @@ const Features = ({ src, title, description }) => {
 };
 
 function AwesomeFeatures() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      offset: 100,
+      easing: "ease-in-sine",
+      delay: 100,
+    });
+  }, []);
   return (
-    <div className="my-10 p-3 text-center">
+    <div className="my-10 p-3 text-center" data-aos="fade-down">
       <h2 className="cormaorant-bold text-3xl">Awesome Features</h2>
       <p className="cormaorant-regular font-semibold">
         Get ready to unlock the next level of features

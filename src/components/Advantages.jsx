@@ -1,4 +1,8 @@
 import { assets } from "../assets/assets";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 const AdvantagesCard = ({ title, description }) => {
   return (
     <div className="cormaorant-regular Navlinks-Shadow Advantages-bgColor flex min-h-52 max-w-[200px] flex-col items-center justify-center rounded-lg border border-black p-4">
@@ -11,8 +15,16 @@ const AdvantagesCard = ({ title, description }) => {
 };
 
 function Advantages() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      offset: 100,
+      easing: "ease-in-sine",
+      delay: 500,
+    });
+  }, []);
   return (
-    <div className="my-10">
+    <div className="my-10" data-aos="fade-down">
       <h2 className="cormaorant-bold text-center text-3xl">
         Our Assistance&apos;s advantages
       </h2>
